@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import React, {useState}from 'react';
 import App from "./App";
 import Nav from './Components/Nav';
@@ -115,7 +115,7 @@ const RouteSwitch = () => {
    
    
   return (
-    <BrowserRouter>
+    <HashRouter>
         
         <ShoppingCart total={total} cart={cart} deleteItem={deleteItem} addItem={addItem}/>
         <Nav count={count} active={active}/>
@@ -129,7 +129,7 @@ const RouteSwitch = () => {
             </Route>
         </Routes>
        
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

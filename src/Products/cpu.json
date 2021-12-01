@@ -1,0 +1,28 @@
+[
+    {
+    "id": 1,
+    "title": "AMD Ryzen 5 1600 (3,6Ghz) ",
+    "price": 200,        
+    "image": "https://www.amd.com/system/files/11157-ryzen-5-pib-left-facing-1260x709.png"    
+    },
+    {
+    "id": 2,
+    "title": "AMD Ryzen 7 1600 (5,6Ghz)",
+    "price": 400,
+    "image": "https://www.amd.com/system/files/2019-06/238593-ryzen-7-pib-left-facing-1260x709.png"   
+    },
+    {
+    "id": 3,
+    "title": "Intel Core i7-11700K (5,Ghz)",
+    "price":500,    
+    "image": "https://www.intel.com/content/dam/www/global/badges/11th-gen-core-i7-processors-badge-rwd.png.rendition.intel.web.480.270.png"    
+    },
+    {
+    "id": 4,
+    "title": "Intel Core i9-11900KF (5,3 Ghz)",
+    "price": 700,    
+    "image": "https://www.nexxcom.lk/wp-content/uploads/2020/08/INTEL%C2%AE-CORE%E2%84%A2-I9-10900X-copy-min-1.png"
+        
+    }  
+  
+]

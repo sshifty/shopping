@@ -1,0 +1,27 @@
+[
+    {
+    "id": 5,
+    "title": "Nvidia Geforce RTX 3060 TI 6GB ",
+    "price": 500,    
+    "image": "https://tablet.hu/img/o/393858-e8d6k.png"    
+    },
+    {
+    "id": 6,
+    "title": "Nvidia Geforce RTX 3070 TI 8GB",
+    "price": 700,
+    "image": "http://www.gainward.com/main/product/vga/pro/p01096/p01096_pic2_15745f6c4b7b32d61.png"   
+    },
+    {
+    "id": 7,
+    "title": "Nvidia Geforce RTX 3080 TI 12GB", 
+    "price":1100,   
+    "image": "https://www.pcland.hu/images/termekek/termekek_480000-485000/480795/evga-nvidia-rtx-3080-ti-12gb-gddr6x-geforce-12g-p5-3967-kr.png"    
+    },
+    {
+    "id": 8,
+    "title": "Nvidia Geforce RTX 3090 TI 12GB",
+    "price": 1650,    
+    "image": "https://dh9cuahs6ezpz.cloudfront.net/images/products/550x550/product_10_20200929085418_5f7285ba4813c_61358.png"    
+    }  
+  
+]

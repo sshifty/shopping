@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import {Link} from 'react-router-dom';
 
-function App() {
+function App(props) {
+  const {change}=props;
+  console.log(change)
+  change(true)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1 className="main-name">Nvidia GeForce RTX 3090</h1>
+        <h3 className="main-title">Now available for preorder, shipping December, 2020.</h3>
+        
+          <Link to="/products">
+            <button className="btn-shop">
+              shop now
+            </button>
+          </Link>
+        
+        
     </div>
   );
 }

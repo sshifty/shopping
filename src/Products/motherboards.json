@@ -1,0 +1,21 @@
+[
+    {
+    "id": 13,
+    "title": "MSI B450 Tomahawk MAX",
+    "price": 114,    
+    "image": "https://storage-asset.msi.com/global/picture/image/feature/mb/B450/B450TomagawkMax/b450-tomahawk-max-hero.png"    
+    },
+    {
+    "id": 14,
+    "title": "Asus TUF Gaming X570-Plus (Wi-Fi)",
+    "price": 170,
+    "image": "https://dlcdnimgs.asus.com/websites/global/products/5awsickoptqkycdu/img/gaming/tuf-z390-plus-gaming(wifi)_2d_aura.png"   
+    },
+    {
+    "id": 15,
+    "title": "Asus ROG STRIX B450-F GAMING ",
+    "price":133,    
+    "image": "https://www.rufusz.hu/Asus_ROG_Strix_B450-F_Gaming_II_ATX_AM4-i2145711.png"    
+    }   
+  
+]

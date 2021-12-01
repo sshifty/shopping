@@ -1,0 +1,27 @@
+[
+    {
+    "id": 9,
+    "title": "Kingston FURY Renegade Black 8GB/3200MHz DDR-4",
+    "price": 50,    
+    "image": "https://amielfilarca.me/shopping-cart/static/media/kingston-fury-ddr4.699e05e6.png"    
+    },
+    {
+    "id": 10,
+    "title": "Kingston FURY Beast RGB 8GB/3000MHz DDR-4",
+    "price": 55,
+    "image": "https://amielfilarca.me/shopping-cart/static/media/kingston-fury-ddr4-rgb.59c93de9.png"   
+    },
+    {
+    "id": 11,
+    "title": "Kingston FURY Beast Black 16GB/2666MHz DDR-4 ",
+    "price":93,    
+    "image": "https://c1.neweggimages.com/ProductImage/A6ZPD21072914SCSP.jpg"    
+    },
+    {
+    "id": 12,
+    "title": "Patriot DDR4 3000MHz 16GB Viper Steel",
+    "price": 100,    
+    "image": "https://p1.akcdn.net/full/761640507.patriot-viper-steel-16gb-2x8gb-ddr4-3600mhz-pvs416g360c8k.jpg"    
+    }  
+  
+]

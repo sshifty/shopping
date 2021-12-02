@@ -18,8 +18,8 @@ const Item=props=>{
     
     return (
         <div className="items">
-            {items[productName].map(item=>{
-                return <Card  addItem={addItem} infos={item}/>
+            {items[productName].map((item,i)=>{
+                return <Card key={i}  addItem={addItem} infos={item}/>
             })}
         </div>
     );

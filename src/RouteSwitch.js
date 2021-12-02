@@ -29,6 +29,7 @@ const RouteSwitch = () => {
     
     const notify = () => toast.success('Item has been added to your cart!',{
         position:"bottom-center",
+        autoClose: 1500,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: false,
@@ -39,7 +40,7 @@ const RouteSwitch = () => {
     const addItem=(item,loc)=>{
         
         let tempTotal=total;
-        
+        let dumb=JSON.parse(JSON.stringify(item))
         if(!item.count){
             item.count=0;
         }
@@ -47,10 +48,12 @@ const RouteSwitch = () => {
         if(!cart.items.length){ 
                  
             setCart(prevState=>{
-                item.count=1;
+                
+                dumb.count=1;
+                
                 
                 return{
-                    items:[item]                    
+                    items:[dumb]                    
                 }
             });
             setTotal(item.price);
@@ -75,13 +78,11 @@ const RouteSwitch = () => {
                    temp.count++;                       
                    tempItems.push(temp);                   
                };
-               console.log("tempitems",tempItems)
                 return{                                  
                     items:tempItems,                    
                 };            
             });
             tempTotal+=item.price
-            console.log(tempTotal)
             setTotal(
                  tempTotal
             );
@@ -100,7 +101,6 @@ const RouteSwitch = () => {
        let tempTotal=total;
        setCart(prevState=>{
         let tempItems = JSON.parse(JSON.stringify(prevState.items));
-        console.log(tempItems)
         tempItems.map((temp,i)=>{            
             if(temp.id===item.id){
                 if(item.count===1){
@@ -124,7 +124,6 @@ const RouteSwitch = () => {
    } 
    
    const changeActive=(cond)=>{
-       console.log(cond)
        setActive(cond);
    }
    

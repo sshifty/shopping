@@ -2,16 +2,12 @@ import {useParams,useLocation} from 'react-router-dom';
 import {Outlet,Link} from 'react-router-dom';
 
 const Products=props=>{
-    const params=useParams();
-    const location=useLocation();
+    const params=useParams();   
     const {change}=props;
-    change(false)
-    console.log(location)
-  
+    change(false); 
    
     
     let name=params.productName;
-    console.log(typeof name)
     switch(name){        
         case 'cpu':
             name='Processors';

@@ -5,8 +5,7 @@ import shopIcon from '../images/shopping-cart.png';
 
 const Nav=props=>{
     
-    const {active,count}=props;
-    console.log(count)
+    const {active,count}=props;    
     const openCart=()=>{
         const modal=document.querySelector(".modal");
         modal.style.display="block";
@@ -19,7 +18,7 @@ const Nav=props=>{
             <nav className="nav-items">               
                 <Link  className="nav-item home" to="/">Home</Link>
                 <Link  className="nav-item" to="/products">Products</Link>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" className="nav-item">Contact</a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" className="nav-item" rel="noreferrer">Contact</a>
                 <button  className="btn-cart nav-item" onClick={openCart} >
                     <img src={shopIcon} alt="Cart icon" />
                     {count?<div className="bubble">{count}</div>:null}

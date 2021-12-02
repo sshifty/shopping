@@ -11,7 +11,6 @@ const ShoppingCart=props=>{
         const modal=document.querySelector(".modal");
         modal.style.display="none";
     }
-    console.log(cart)
     return (
       <div className="modal" >
         <div class="modal-content">

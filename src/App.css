@@ -243,6 +243,8 @@ a{
   list-style-type: none;
 }
 .items{
+  max-height: 100%;
+  overflow-y: scroll;
   flex:4;
   display: flex;
   flex-wrap: wrap;

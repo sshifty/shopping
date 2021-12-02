@@ -18,8 +18,8 @@ const ListAll=props=>{
     return (
         <div className="items">
             {items.map(type=>{
-               return type.map(item=>{
-                    return <Card addItem={addItem} infos={item}/>
+               return type.map((item,i)=>{
+                    return <Card key={i} addItem={addItem} infos={item}/>
                 })
             })}
         </div>

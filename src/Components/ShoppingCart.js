@@ -30,7 +30,7 @@ const ShoppingCart=props=>{
                             <div className="cart-item-count">
                               <button onClick={deleteItem.bind(this,item)} class="btn-count">&minus;</button>
                               <p className="p-count">{item.count}</p>
-                              <button onClick={addItem.bind(this,item)} class="btn-count">+</button>
+                              <button onClick={addItem.bind(this,item,"cart")} class="btn-count">+</button>
                             </div>
                           </div>
                         </div>

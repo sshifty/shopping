@@ -13,7 +13,7 @@ const Card=props=>{
                 <p>${price}</p>                
             </div>
             <div className="btn-container">
-                <button onClick={addItem.bind(this,props.infos)} className="btn-add">Add to cart</button>
+                <button onClick={addItem.bind(this,props.infos,"card")} className="btn-add">Add to cart</button>
 
             </div>
             

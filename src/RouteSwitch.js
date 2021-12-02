@@ -1,11 +1,14 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import React, {useState}from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import App from "./App";
 import Nav from './Components/Nav';
 import Products from './Components/Products';
 import Item from './Components/Item';
 import ListAll from './Components/ListAll';
 import ShoppingCart from "./Components/ShoppingCart";
+
 
 
 
@@ -23,8 +26,18 @@ const RouteSwitch = () => {
     
     const [active,setActive]=useState(true);    
 
-   
-    const addItem=item=>{
+    
+    const notify = () => toast.success('Item has been added to your cart!',{
+        position:"bottom-center",
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        theme:'dark'
+    });
+    const addItem=(item,loc)=>{
+        
         let tempTotal=total;
         
         if(!item.count){
@@ -75,6 +88,9 @@ const RouteSwitch = () => {
 
         }
         setCount(count+1);
+        if(loc==='card'){
+            notify();
+        }
         
      
     };
@@ -128,7 +144,7 @@ const RouteSwitch = () => {
                     element={<Item  addItem={addItem}/>}/>
             </Route>
         </Routes>
-       
+       <ToastContainer />
     </HashRouter>
   );
 };
